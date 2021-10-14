@@ -1,2 +1,0 @@
-# knowledge-distillation
-knowledge-distillation 

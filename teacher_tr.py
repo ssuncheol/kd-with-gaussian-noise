@@ -1,15 +1,22 @@
 import torch.nn as nn  
 import torch.nn.functional as F 
 import time 
+import random
+from gaussian_noise import add_noise
 
 
-def teacher_train(epoch, model, optimizer,train_loader,log_interval):
-    
+def teacher_train(epoch, model, optimizer,train_loader,log_interval,method,noise_variance,scheduler):
     model.train()
     st = time.time()
     for batch_idx, (data, target) in enumerate(train_loader):
         data, target = data.cuda(), target.cuda()
+        if method == 'ga' : 
+            data = add_noise(data,noise_variance)
+        else : 
+            pass  
+                                 
         optimizer.zero_grad()
+        #import pdb; pdb.set_trace()
         output = model(data)
         loss = F.cross_entropy(output, target)
         loss.backward()
@@ -19,6 +26,8 @@ def teacher_train(epoch, model, optimizer,train_loader,log_interval):
                 epoch, batch_idx * len(data), len(train_loader.dataset),
                 100. * batch_idx / len(train_loader), loss.data))
     print('teacher_network train time is {0}s'.format(time.time()-st))
+    
+    scheduler.step() 
 
 def teacher_train_eval(model,train_loader):
     model.eval()
