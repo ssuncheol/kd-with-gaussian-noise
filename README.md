@@ -1,6 +1,6 @@
 ## KD-with-gaussian-noise
 
-This is a Pytorch implementation of Knowledge-distillation with gaussian noise. 
+This is a Pytorch implementation of Knowledge-distillation with gaussian noise. (Mixed precision)
 
 - Title : Noise as a Resource for Learning in Knowledge Distillation
 
