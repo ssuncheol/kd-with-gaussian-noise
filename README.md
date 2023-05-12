@@ -34,14 +34,14 @@ git clone https://github.com/ssuncheol/KD-with-gaussian-noise.git
 
 ## Experiments 
 
-I use CIFAR10, MNIST Dataset to train and evalute model 
+I use cifar10, mnist dataset to train and evalute model 
 
 
 ### Arguments
 | Args 	| Type 	| Description 	| Default|
 |:---------:|:--------:|:----------------------------------------------------:|:-----:|
 | Epochs 	| [int] 	| Epochs | 200|
-| Data | [str] | Cifar10, mnist | mnist |
+| Data | [str] | cifar10, mnist | mnist |
 | Mode | [str] | train, kd | train | 
 | Batch_size 	| [int] 	| Batch size | 128|
 | Model 	| [str]	| resnet18, wrn, wrn_s | resnet18 |
