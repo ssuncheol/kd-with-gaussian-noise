@@ -1,6 +1,6 @@
 ## KD-with-gaussian-noise
 
-This is a Pytorch implementation of Knowledge-distillation with gaussian noise. (Data Parallel)
+This is a Pytorch implementation of Knowledge-distillation with gaussian noise. 
 
 - Title : Noise as a Resource for Learning in Knowledge Distillation
 
@@ -12,8 +12,6 @@ This is a Pytorch implementation of Knowledge-distillation with gaussian noise. 
 Cuda 11.0
 Python3 3.8
 PyTorch 1.8 
-Torchvision 0.10.0
-Einops 0.4.1
 ```
 
 ##  Quickstart 
