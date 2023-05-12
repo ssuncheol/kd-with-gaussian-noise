@@ -45,7 +45,7 @@ I use cifar10, mnist dataset to train and evalute model
 | Mode | [str] | train, kd | train | 
 | Batch_size 	| [int] 	| batch size | 128|
 | Model 	| [str]	| resnet18, wrn, wrn_s | resnet18 |
-| Learning rate | [float] | ;earning rate | 1e-1 |
+| Learning rate | [float] | learning rate | 1e-1 |
 | Weight_decay 	| [float]	| weight decay | 5e-4 |
 |Momentum| [float]| momentum| 0.9 | 
 |Alpha| [float] | alpha | 0.9 |
