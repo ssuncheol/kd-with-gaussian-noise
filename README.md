@@ -2,7 +2,7 @@
 
 This is a Pytorch implementation of Knowledge-distillation with gaussian noise. (Mixed precision)
 
-- Title : Noise as a Resource for Learning in Knowledge Distillation
+- Title : Noise as a Resource for Learning in Knowledge Distillation [Wacv 2021]
 
 - Link : [https://arxiv.org/abs/1910.05057]
 
@@ -40,17 +40,17 @@ I use cifar10, mnist dataset to train and evalute model
 ### Arguments
 | Args 	| Type 	| Description 	| Default|
 |:---------:|:--------:|:----------------------------------------------------:|:-----:|
-| Epochs 	| [int] 	| Epochs | 200|
+| Epochs 	| [int] 	| epochs | 200|
 | Data | [str] | cifar10, mnist | mnist |
 | Mode | [str] | train, kd | train | 
-| Batch_size 	| [int] 	| Batch size | 128|
+| Batch_size 	| [int] 	| batch size | 128|
 | Model 	| [str]	| resnet18, wrn, wrn_s | resnet18 |
-| Learning rate | [float] | Learning rate | 1e-1 |
-| Weight_decay 	| [float]	| Weight decay | 5e-4 |
-|Momentum| [float]| Momentum| 0.9 | 
-|Alpha| [float] | Alpha | 0.9 |
-| Noise_label | [float] | Noise_label | 0.1 |
-| Temp | [float] | Temperature scaling | 10 |
+| Learning rate | [float] | ;earning rate | 1e-1 |
+| Weight_decay 	| [float]	| weight decay | 5e-4 |
+|Momentum| [float]| momentum| 0.9 | 
+|Alpha| [float] | alpha | 0.9 |
+| Noise_label | [float] | noise_label | 0.1 |
+| Temp | [float] | temperature scaling | 10 |
 
 
 ### How to train
