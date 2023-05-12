@@ -2,7 +2,7 @@
 
 This is a Pytorch implementation of Knowledge-distillation with gaussian noise. (Mixed precision)
 
-- Title : Noise as a Resource for Learning in Knowledge Distillation [Wacv 2021]
+- Title : Noise as a Resource for Learning in Knowledge Distillation [WACV 2021]
 
 - Link : [https://arxiv.org/abs/1910.05057]
 
